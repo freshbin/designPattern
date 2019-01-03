@@ -20,18 +20,6 @@ public class ShoppingMall {
 	private static double price = 50;
 	
 	public static void main(String[] args) {
-		/*System.out.println("老板跑路啦，全场一折大甩卖!");
-		ManagerMallStrategy mallStrategy = new MallDiscountImpl();
-		System.out.println("原价"+ price + "的商品，现在只要: " + (price * mallStrategy.discount(1)));
-		
-		System.out.println("==========");
-		
-		System.out.println("新老板来了，价格打九折!");
-		ManagerMallStrategy mallStrategyTwo = new MallDiscountImpl();
-		System.out.println("原价"+ price + "的商品，现在只要: " + (price * mallStrategyTwo.discount(2)));
-		
-		System.out.println("==================================================");*/
-		
 		System.out.println("欢迎光临!");
 		
 		System.out.println("目前有以下" + MallDiscountImpl.discountStrategyMap.size() + "种打折方案!");
