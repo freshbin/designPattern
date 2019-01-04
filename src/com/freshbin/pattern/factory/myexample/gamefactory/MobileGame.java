@@ -3,23 +3,23 @@ package com.freshbin.pattern.factory.myexample.gamefactory;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.freshbin.pattern.factory.myexample.gametype.CFGame;
+import com.freshbin.pattern.factory.myexample.gametype.EatChickenGame;
 import com.freshbin.pattern.factory.myexample.gametype.Game;
 import com.freshbin.pattern.factory.myexample.gametype.GloryOfKing;
 import com.freshbin.pattern.factory.myexample.gametype.LOLGame;
 
 /**
- * PC游戏
+ * 移动端游戏
  * 
  * @author freshbin
- * @date 2019-1-4 11:53:32
+ * @date 2019-1-4 15:13:09
  */
-public class PCGame implements GameFactory {
+public class MobileGame implements GameFactory {
 	private static Map<Integer, Game> gameMap = new HashMap<>();
 
 	static {
-		gameMap.put(1, new LOLGame());
-		gameMap.put(2, new CFGame());
+		gameMap.put(1, new GloryOfKing());
+		gameMap.put(2, new EatChickenGame());
 	}
 
 	@Override
@@ -51,6 +51,6 @@ public class PCGame implements GameFactory {
 
 	@Override
 	public String display() {
-		return "pc game";
+		return "mobile game";
 	}
 }

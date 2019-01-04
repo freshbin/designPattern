@@ -16,6 +16,7 @@ import com.freshbin.pattern.factory.myexample.producer.GameFactoryProducer;
 public class FactoryMain {
 	public static void main(String[] args) {
 		do {
+			System.out.println("=========游戏选择开始界面=============");
 			GameFactoryProducer.displayGameFactory();
 			Integer chooseFactory = chooseGameFactory();
 			if(chooseFactory == 0) {

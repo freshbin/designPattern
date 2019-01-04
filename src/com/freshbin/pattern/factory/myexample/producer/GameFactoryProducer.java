@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.freshbin.pattern.factory.myexample.gamefactory.GameFactory;
+import com.freshbin.pattern.factory.myexample.gamefactory.MobileGame;
 import com.freshbin.pattern.factory.myexample.gamefactory.PCGame;
 import com.freshbin.pattern.factory.myexample.gametype.Game;
 
@@ -23,6 +24,7 @@ public class GameFactoryProducer {
 
 	static {
 		gameFactoryMap.put(1, new PCGame());
+		gameFactoryMap.put(2, new MobileGame());
 	}
 
 	public GameFactoryProducer(Integer chooseFactory) {
