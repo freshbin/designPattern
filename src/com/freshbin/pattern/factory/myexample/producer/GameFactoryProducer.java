@@ -9,7 +9,6 @@ import java.util.Map;
 import com.freshbin.pattern.factory.myexample.gamefactory.GameFactory;
 import com.freshbin.pattern.factory.myexample.gamefactory.MobileGame;
 import com.freshbin.pattern.factory.myexample.gamefactory.PCGame;
-import com.freshbin.pattern.factory.myexample.gametype.Game;
 
 /**
  * 制造游戏工厂
@@ -35,7 +34,7 @@ public class GameFactoryProducer {
 			gameFactory = gameFactoryMap.get(chooseFactory);
 			gameFactory.displayGameList();
 			Integer chooseGame = chooseGameFactory(gameFactory);
-			if(chooseGame == 0) {
+			if (chooseGame == 0) {
 				break;
 			}
 			gameFactory.chooseGame(chooseGame);
@@ -58,11 +57,11 @@ public class GameFactoryProducer {
 	}
 
 	public static void displayGameFactory() {
-		if(gameFactoryMap == null || gameFactoryMap.size() <= 0) {
+		if (gameFactoryMap == null || gameFactoryMap.size() <= 0) {
 			return;
 		}
-		
-		for(Map.Entry<Integer, GameFactory> gameFactory : gameFactoryMap.entrySet()) {
+
+		for (Map.Entry<Integer, GameFactory> gameFactory : gameFactoryMap.entrySet()) {
 			System.out.println(gameFactory.getKey() + ":" + gameFactory.getValue().display());
 		}
 		System.out.println("请输入序号选择您想玩的游戏类型(输入0退出)：");

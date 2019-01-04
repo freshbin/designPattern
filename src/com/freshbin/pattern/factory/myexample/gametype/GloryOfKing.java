@@ -2,6 +2,7 @@ package com.freshbin.pattern.factory.myexample.gametype;
 
 /**
  * 王者荣耀
+ * 
  * @author freshbin
  * @date 2019-1-4 12:06:03
  */

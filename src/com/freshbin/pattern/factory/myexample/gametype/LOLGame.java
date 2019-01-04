@@ -2,6 +2,7 @@ package com.freshbin.pattern.factory.myexample.gametype;
 
 /**
  * LOL游戏
+ * 
  * @author freshbin
  * @date 2019-1-4 12:05:02
  */
