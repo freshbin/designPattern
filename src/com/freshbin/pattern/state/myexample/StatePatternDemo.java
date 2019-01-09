@@ -7,7 +7,7 @@ import java.util.List;
  * 状态模式
  * 
  * @author freshbin
- * @date 2019年1月9日 下午2:49:32
+ * @date 2019-1-9 20:39:58
  */
 public class StatePatternDemo {
 	public static void main(String[] args) {
