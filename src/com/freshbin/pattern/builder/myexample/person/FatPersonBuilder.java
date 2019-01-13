@@ -1,9 +1,6 @@
 package com.freshbin.pattern.builder.myexample.person;
 
-import java.awt.Color;
 import java.awt.Graphics;
-
-import javax.swing.JPanel;
 
 /**
  * 胖小人
@@ -12,7 +9,7 @@ import javax.swing.JPanel;
  * @date 2019-1-13 15:26:37
  */
 public class FatPersonBuilder extends PersonBuilder {
-	
+
 	@Override
 	public void builderHead() {
 		graphics.drawOval(50, 20, 30, 30);

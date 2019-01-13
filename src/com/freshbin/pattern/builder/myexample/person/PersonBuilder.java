@@ -1,7 +1,6 @@
 package com.freshbin.pattern.builder.myexample.person;
 
 import java.awt.Graphics;
-import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
@@ -13,7 +12,7 @@ import javax.swing.JPanel;
  */
 public abstract class PersonBuilder extends JPanel {
 	protected Graphics graphics;
-	
+
 	abstract void builderHead();
 
 	abstract void builderBody();

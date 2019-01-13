@@ -1,9 +1,6 @@
 package com.freshbin.pattern.builder.myexample.person;
 
-import java.awt.Color;
 import java.awt.Graphics;
-
-import javax.swing.JPanel;
 
 /**
  * 瘦小人
@@ -12,7 +9,7 @@ import javax.swing.JPanel;
  * @date 2019年1月13日 上午11:04:43
  */
 public class ThinPersonBuilder extends PersonBuilder {
-	
+
 	@Override
 	public void builderHead() {
 		graphics.drawOval(50, 20, 30, 30);
